@@ -41,7 +41,7 @@ html {                                                  /*   Changed tag from bo
 }
 
 /* Nav Bar Style*/
-.ul {                                                   /*   I replaced grabbing the clas 'nav-links' with ul */
+ul {                                                    /*   I replaced grabbing the clas 'nav-links' with ul */
     display: flex;                                      /* because I like to only go for classes or Ids when */
                                                         /* the style shouldn't be added to any of the other */
                                                         /* similar elements*/
