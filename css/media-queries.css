@@ -1,14 +1,17 @@
+/* ========================= Mobile====================*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
+html {
     margin: 0 auto;
     font-size: 10px;
     font-family: sans-serif;
     padding: 1em;
+    position: relative;
 }
 
 .alert-info {
@@ -27,9 +30,10 @@ body {
     text-decoration: none;
     color: black;
 }
+
  h1 {
-    font-size: 5em;
-    text-align: center;
+     font-size: 5em;
+     text-align: center;
      padding-top: .5em;
      padding-bottom: 1em;
      margin: 0 auto;
@@ -47,15 +51,10 @@ body {
      line-height: 1em;
  }
 
-.nav-links {
+.ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
 }
 
 li {
@@ -98,3 +97,59 @@ footer {
 #social-media-links {
     font-size: 2em;
 }
+
+
+/* ========================= DESKTOP====================*/
+@media screen and (min-width: 576px) {
+    .alert-info {
+        display: none;
+    }
+
+    h1 {
+        float: left;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        padding: 3.2em 2em;
+        font-size: 1.6em;
+        list-style-type: none;
+        width: 100%;
+    }
+    li a {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: .8em ;
+        background: white;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    #main {
+        width: 55%;
+        height: 50em;
+
+        float: left;
+    }
+
+    .sub-section {
+        width: 35%;
+        height: 50em;
+
+        float: right;
+    }
+    footer {
+        clear: right;
+    }
+}
+
