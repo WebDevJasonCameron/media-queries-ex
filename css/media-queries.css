@@ -10,3 +10,9 @@ ul {
 li {
     list-style-type: none;
 }
+li a {
+    display: inline-block;
+    background: gray;
+    padding: 1em;
+    width 100%;
+}
