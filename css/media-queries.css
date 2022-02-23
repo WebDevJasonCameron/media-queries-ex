@@ -5,6 +5,7 @@
 }
 
 body {
+    margin: 0 auto;
     font-size: 10px;
     font-family: sans-serif;
     padding: 1em;
@@ -26,10 +27,20 @@ body {
     text-decoration: none;
     color: black;
 }
+ h1 {
+    font-size: 8em;
+    text-align: center;
+     padding-top: .5em;
+     padding-bottom: 1em;
+     margin: 0 auto;
+}
 
 .nav-links {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+
 }
 
 ul {
@@ -37,13 +48,24 @@ ul {
 }
 
 li {
+
+    font-size: 25px;
     list-style-type: none;
+    width: 100%;
+
+}
+.header-img {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 100%;
 }
 
-/* HEAD */
-
 li a {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px ;
     background: gray;
     padding: 1em;
     width: 100%;
