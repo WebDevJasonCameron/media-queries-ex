@@ -1,19 +1,20 @@
 /* ========================= Mobile====================*/
 
-* {
+/*OVER ALL PAGE Style*/
+* {                                                     /*   zero out default */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html {
-    margin: 0 auto;
-    font-size: 10px;
+html {                                                  /*   Changed tag from body to html. Though I might turn body */
+    margin: 0 auto;                                     /* it into a flexbox */
+    font-size: 10px;                                    /*   Standardized 'em' to ten pixels */
     font-family: sans-serif;
     padding: 1em;
-    position: relative;
 }
 
+/* "Skip to main content" Style*/
 .alert-info {
     background-color: lightblue;
     height: 5em;
@@ -21,8 +22,8 @@ html {
     font-size: 1.6em;
     border: 2px solid gray;
 
-    display: flex;
-    justify-content: center;
+    display: flex;                                      /*   Set to flexbox so we could center text with the */
+    justify-content: center;                            /* following: */
     align-items: center;
 }
 
@@ -31,46 +32,28 @@ html {
     color: black;
 }
 
+ /* "Company" Style*/
  h1 {
      font-size: 5em;
-     text-align: center;
-     padding-top: .5em;
+     text-align: center;                                /*   NOTE: I deleted the 'margin: 0 auto' because this */
+     padding-top: .5em;                                 /* centers the text. (^_^) */
      padding-bottom: 1em;
-     margin: 0 auto;
 }
 
- h2 {
-     font-size: 2.5em;
-     padding-top: 1em;
-     padding-bottom: .5em;
-     margin: 0 auto;
- }
-
- p {
-     font-size: 1.6em;
-     line-height: 1em;
- }
-
-.ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Nav Bar Style*/
+.ul {                                                   /*   I replaced grabbing the clas 'nav-links' with ul */
+    display: flex;                                      /* because I like to only go for classes or Ids when */
+                                                        /* the style shouldn't be added to any of the other */
+                                                        /* similar elements*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
 }
 
 li {
     font-size: 1.6em;
     list-style-type: none;
     width: 100%;
-
 }
-.header-img {
-    display: flex;
-    justify-content: center;
-}
-img {
-    width: 100%;
-}
-
 li a {
     display: flex;
     justify-content: center;
@@ -80,6 +63,29 @@ li a {
     width: 100%;
 }
 
+/* Image Style*/
+.header-img {                                           /*   Remember, this is a div that acts like a container */
+    display: flex;                                      /* for the image element.  That is why we convert it into */
+    justify-content: center;                            /* a flexbox container.  Then we center everything inside*/
+}
+img {
+    width: 100%;
+}
+
+
+/* "Sections" Style*/
+h2 {
+    font-size: 2.5em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.6em;
+    line-height: 1em;
+}
+
 .sub-section {
     font-style: italic;
 }
@@ -87,9 +93,9 @@ li a {
     font-size: 2em;
 }
 
-footer {
-    margin-top: 5em;
-
+footer {                                                /*   The footer acts exactly like the image div tag. */
+    margin-top: 5em;                                    /* Only, this time we push both element (the 'p' and */
+                                                        /* 'social media' div' with 'space-between'*/
     display: flex;
     justify-content: space-between;
 }
@@ -100,17 +106,20 @@ footer {
 
 
 /* ========================= DESKTOP====================*/
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {                  /*   Better info on this tag can be found here: */
+                                                        /* https://java.codeup.com/html-css/css-ii/media-queries/*/
     .alert-info {
         display: none;
     }
 
-    h1 {
-        float: left;
-    }
+    h1 {                                                /*   I really jerry-rigged this version with FLOATS!*/
+        float: left;                                    /*   Remember, when you use floats the element is taken */
+    }                                                   /* out of the normal browser flow.  This causes so many */
+                                                        /* problems!  Elements will be found sitting on top of each*/
+                                                        /* other*/
 
-    nav {
-        display: flex;
+    nav {                                               /*   This is why I can turn this nav element into a flexbox*/
+        display: flex;                                  /* and */
         justify-content: flex-end;
     }
 
