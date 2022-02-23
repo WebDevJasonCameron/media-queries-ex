@@ -15,7 +15,7 @@ body {
     background-color: lightblue;
     height: 5em;
     width: 100%;
-    font-size: 2.2em;
+    font-size: 1.6em;
     border: 2px solid gray;
 
     display: flex;
@@ -28,28 +28,38 @@ body {
     color: black;
 }
  h1 {
-    font-size: 8em;
+    font-size: 5em;
     text-align: center;
      padding-top: .5em;
      padding-bottom: 1em;
      margin: 0 auto;
 }
 
+ h2 {
+     font-size: 2.5em;
+     padding-top: 1em;
+     padding-bottom: .5em;
+     margin: 0 auto;
+ }
+
+ p {
+     font-size: 1.6em;
+     line-height: 1em;
+ }
+
 .nav-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 ul {
-    padding-left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 li {
-
-    font-size: 25px;
+    font-size: 1.6em;
     list-style-type: none;
     width: 100%;
 
@@ -65,9 +75,26 @@ img {
 li a {
     display: flex;
     justify-content: center;
-    margin-bottom: 18px ;
+    margin-bottom: .8em ;
     background: gray;
     padding: 1em;
     width: 100%;
 }
 
+.sub-section {
+    font-style: italic;
+}
+.sub-section h2 {
+    font-size: 2em;
+}
+
+footer {
+    margin-top: 5em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-media-links {
+    font-size: 2em;
+}
