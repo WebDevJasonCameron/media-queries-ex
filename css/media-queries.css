@@ -1,3 +1,12 @@
-body {
-    background-color: pink;
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
 }
